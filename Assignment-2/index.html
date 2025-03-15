@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeWell - Wellness Challenges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #d4f1f9, #ffffff);
+            text-align: center;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            border-radius: 50%;
+            width: 50px;
+            margin-right: 8px;
+        }
+        .logo-container .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00a693;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .nav a:hover, .nav a.active {
+            background-color: #d4f1f9;
+            color: #0073e6;
+        }
+        .hero {
+            background: url(/images/yoga-1.jpg) no-repeat center/cover;
+            color: white;
+            padding-right: 50px;
+            align-items: center;
+            padding-bottom: 30%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .text-content{
+            text-align: right;
+        }
+        .hero h1 {
+            padding-top: 30%;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+            display: flex;
+        }
+
+        .hero span {
+            color: #00a693;
+        }
+
+        .hero .btn {
+            background: #00a693;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .hero .btn:hover {
+            background: #007d65;
+        }
+        
+        /* Content Section */
+        .section1 {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #e3f2f1, #c5e3dc);
+        }
+        .content1 {
+            max-width: 1000px;
+            margin: auto;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .content1 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content1 ul li {
+            padding: 5px 0;
+        }
+        .section1 .button{
+            background: #00a693;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .section1 .button:hover{
+            background: #007d65;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+            display: flex;
+            color: #00a693;
+            justify-content: space-between;
+            background: url(yoga-5.jpg)no-repeat center/cover;
+        }
+
+        .section .men {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            padding: 5px 0;
+        }
+
+        /* Image Styling */
+        .section .circle-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .section2 {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+            color: #00a693;
+            display: flex;
+            justify-content: space-between;
+            background: url(/images/yoga-3.jpg) no-repeat center/cover;
+        }
+        .section2 .phy{
+            text-align: left;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+        }
+        .content2 {
+            max-width: 1000px;
+            margin: auto;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .content2 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content2 ul li {
+            padding: 5px 0;
+        }
+
+        /* Image Styling */
+        .section2 .circle-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+       .footer {
+            background: #d4f1f9;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer .column {
+            flex: 1;
+            text-align: left;
+            padding: 10px;
+        }
+        .footer .column img {
+            width: 50px;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        .footer .column p {
+            margin-bottom: 10px;
+        }
+        .footer .social a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #009688;
+            font-weight: bold;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            background: #d4f1f9;
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image-box {
+                width: 80%;
+            }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="/images/logo.jpg" alt="Logo">
+            <div class="logo-text">VibeWell</div>
+        </div>
+        <div class="nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Challenges</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="text-content">
+            <h1>Welcome To <span>VibeWell</span></h1>
+            <a href="#" class="btn">Log in</a>
+        </div>
+    </div>
+
+    <div class="section1">
+        <div class="content1">
+            <p>At VibeWell, we believe that a balanced mind and body create a harmonious life. Our monthly wellness challenges are designed to guide you on a journey of self-care, helping you stay physically active, mentally focused, and spiritually grounded.</p>
+            <p>Explore a unique combination of physical and mental activities tailored for your overall well-being. Whether it's yoga, mindful meditation, or healthy lifestyle habits, our challenges are crafted to fit into your busy schedule while keeping you motivated.</p>
+            <ul>
+                <li>Are you ready to transform your life, one step at a time?</li>
+            </ul>
+        </div>
+        <a href="#" class="button">Join us</a>
+    </div>
+
+    <!-- Mental Wellness Section -->
+    <div class="section">
+        <div class="img"> </div>
+        <h2 class="men">Mental Wellness</h2>
+        <div class="content">
+            <p>Mental wellness is the foundation of a calm and focused mind. It’s about managing stress, staying positive, and being mindful of your thoughts and emotions.</p>
+            <p>At VibeWell, we guide you through:</p>
+            <ul>
+                <li>Mindful meditation to reduce stress and improve focus.</li>
+                <li>Yoga practices that calm your mind and energize your body.</li>
+                <li>Gratitude journaling and mindfulness exercises to boost positivity.</li>
+            </ul>
+        </div>
+        <img src="/images/yoga-4.jpg" class="circle-img" alt="Mental Wellness">
+    </div>
+
+    <!-- Physical Wellness Section -->
+    <div class="section2">
+        <h2 class="phy">Physical Wellness</h2>
+        <div class="content2">
+            <p>Physical wellness is about taking care of your body so it can function at its best. It’s about building healthy habits that improve your strength, energy, and vitality.</p>
+            <p>At VibeWell, our challenges include:</p>
+            <ul>
+                <li>Staying active with fun exercises like walking, yoga, or stretching.</li>
+                <li>Building healthy routines like staying hydrated and eating balanced meals.</li>
+                <li>Maintaining a consistent sleep schedule for better energy.</li>
+            </ul>
+        </div>
+        <img src="/images/yoga-7.webp" class="circle-img" alt="Physical Wellness">
+    </div>
+
+    <footer class="footer">
+        <div class="column">
+            <img src="/images/logo.jpg" alt="Logo">
+            <p>Inspiring holistic wellness through balanced mind and body challenges</p>
+        </div>
+        <div class="column">
+            <p>Contact us:</p>
+            <p>+91 8488851314</p>
+            <p>vibewell12@gmail.com</p>
+        </div>
+        <div class="column social">
+            <p>Follow us:</p>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © vibewell.com. All rights reserved.
+    </div>
+</body>
+</html>

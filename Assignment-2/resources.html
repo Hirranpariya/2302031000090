@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - VibeWell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2f1, #c5e3dc);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            border-radius: 50%;
+            width: 50px;
+            margin-right: 8px;
+        }
+        .logo-container .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00a693;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .nav a:hover, .nav a.active {
+            background-color: #d4f1f9;
+            color: #0073e6;
+        }
+        .container {
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #59a3c0;
+        }
+        .resources-list {
+            margin-bottom: 30px;
+        }
+        .resources-list a {
+            display: block;
+            color: #007acc;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .faq {
+            max-width: 800px;
+            margin: auto;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-item span {
+            font-weight: bold;
+        }
+        .footer {
+            background: #d4f1f9;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer .column {
+            flex: 1;
+            text-align: left;
+            padding: 10px;
+        }
+        .footer .column img {
+            width: 50px;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        .footer .column p {
+            margin-bottom: 10px;
+        }
+        .footer .social a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #009688;
+            font-weight: bold;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            background: #d4f1f9;
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="/images/logo.jpg" alt="Logo">
+            <div class="logo-text">VibeWell</div>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Challenges</a>
+            <a href="#" class="active" >Resources</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Resources</h1>
+        <div class="resources-list">
+            <p><b>Some Websites to Guide You Based on Your Wellness Problem:</b></p>
+            <a href="https://www.doyou.com/a-10-minute-morning-yoga-sequence-for-beginners/">10-Minute Daily Yoga for Beginners</a>
+            <a href="https://www.healthline.com/nutrition/mindful-eating-guide#rationale">The Art of Mindful Eating</a>
+            <a href="https://www.colorado.edu/law/25-quick-ways-reduce-stress">Stress-Relief Techniques to Try Today</a>
+            <p><b>Videos and Tutorials</b></p>
+            <a href="https://youtu.be/thcEuMDWx0I">Basic Meditation Techniques</a>
+            <a href="https://youtu.be/2vhiUqV3vJU">Quick Physical Workouts for Busy Schedules</a>
+            <a href="https://youtu.be/krBvzDIL0mM">Guided Relaxation Sessions</a>
+        </div>
+        
+        <h2>FAQs</h2>
+        <div class="faq">
+            <div class="faq-item"><span>What is the Mind-Body Wellness Challenge?</span> <span>+</span></div>
+            <div class="faq-item"><span>Who can participate in the challenges?</span> <span>+</span></div>
+            <div class="faq-item"><span>Do I need special equipment for the physical wellness challenges?</span> <span>+</span></div>
+            <div class="faq-item"><span>Are the challenges free?</span> <span>+</span></div>
+            <div class="faq-item"><span>How do I start a challenge?</span> <span>+</span></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="column">
+            <img src="/images/logo.jpg" alt="Logo">
+            <p>Inspiring holistic wellness through balanced mind and body challenges</p>
+        </div>
+        <div class="column">
+            <p>Contact us:</p>
+            <p>+91 8488851314</p>
+            <p>vibewell12@gmail.com</p>
+        </div>
+        <div class="column social">
+            <p>Follow us:</p>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © vibewell.com. All rights reserved.
+    </div>
+</body>
+</html>
